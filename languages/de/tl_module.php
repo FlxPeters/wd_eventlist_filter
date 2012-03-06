@@ -30,14 +30,11 @@
 
 
 /**
- * Back end modules
+ * Fields
  */
-$GLOBALS['TL_LANG']['MOD'][''] = array('', '');
+$GLOBALS['TL_LANG']['tl_module']['filterStartDate'] = array('Events anzeigen ab', 'Events vor diesem Tag werden aus der Liste gefiltert');
+$GLOBALS['TL_LANG']['tl_module']['filterEndDate'] = array('Events anzeigen bis', 'Events vor nach Tag werden aus der Liste gefiltert');
 
 
-/**
- * Front end modules
- */
-$GLOBALS['TL_LANG']['FMD'][''] = array('', '');
 
 ?>
