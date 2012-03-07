@@ -12,7 +12,6 @@
 
 
 CREATE TABLE `tl_module` (
-  `addDateFilter` char(1) NOT NULL default '',
   `filterStartDate` varchar(10) NOT NULL default '',
   `filterEndDate` varchar(10) NOT NULL default '',
   PRIMARY KEY  (`id`),

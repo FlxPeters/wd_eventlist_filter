@@ -33,7 +33,7 @@
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_module']['filterStartDate'] = array('Events anzeigen ab', 'Events vor diesem Tag werden aus der Liste gefiltert');
-$GLOBALS['TL_LANG']['tl_module']['filterEndDate'] = array('Events anzeigen bis', 'Events vor nach Tag werden aus der Liste gefiltert');
+$GLOBALS['TL_LANG']['tl_module']['filterEndDate'] = array('Events anzeigen bis', 'Events nach diesem Tag werden aus der Liste gefiltert');
 
 
 
