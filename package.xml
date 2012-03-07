@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contaopackage>
+<extension name="wd_eventlist_filter" date="20120222">
+    <author user="wichteldesign" name="Felix Peters" website="http://www.wichteldesign.de" />
+    <copyright>2012 Felix Peters</copyright>
+    <classification type="free" category="application" />
+    <release version="50009" build="9" date="20110510" />
+    <contao minversion="20060039" maxversion="20110009" />
+    <requiredextension name="3CFramework" minversion="50009" maxversion="60007" />
+    <requiredextension name="DC_Memory" minversion="50009" maxversion="60007" />
+    <language code="de">
+        <translator user="wichteldesign" name="Felix Peters" website="http://www.wichteldesign.de" />
+        <searchtags>Event Events Eventlist</searchtags>
+        <title>Eventlist Filter</title>
+        <teaser>Eventliste nach Datum filtern</teaser>
+        <description>Die Extention bietet die Möglichkeit Events in der Eventliste nach einem Start- und Enddatum zu filtern.</description>
+    </language>
+    <language code="en">
+        <translator user="wichteldesign" name="Felix Peters" website="http://www.wichteldesign.de" />
+        <searchtags>Event Events Eventlist</searchtags>
+        <title>Eventlist Filter</title>
+        <teaser>Filter Eeventlist by date</teaser>
+        <description>The Extention helps you to filter events in the eventlist by start- and enddate</description>
+    </language>
+</extension>
