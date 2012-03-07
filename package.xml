@@ -13,13 +13,13 @@
         <searchtags>Event Events Eventlist</searchtags>
         <title>Eventlist Filter</title>
         <teaser>Eventliste nach Datum filtern</teaser>
-        <description>Die Extention bietet die Möglichkeit Events in der Eventliste nach einem Start- und Enddatum zu filtern.</description>
+        <description>&lt;p&gt;Die Extention bietet die Möglichkeit Events in der Eventliste nach einem Start- und Enddatum zu filtern. &lt;br /&gt;&lt;br /&gt; https://github.com/Wichteldesign/wd_eventlist_filter &lt;/p&gt;</description>
     </language>
     <language code="en">
         <translator user="wichteldesign" name="Felix Peters" website="http://www.wichteldesign.de" />
         <searchtags>Event Events Eventlist</searchtags>
         <title>Eventlist Filter</title>
         <teaser>Filter Eeventlist by date</teaser>
-        <description>The Extention helps you to filter events in the eventlist by start- and enddate</description>
+        <description>&lt;p&gt;The Extention helps you to filter events in the eventlist by start- and enddate.&lt;br /&gt;&lt;br /&gt; https://github.com/Wichteldesign/wd_eventlist_filter &lt;/p&gt;</description>
     </language>
 </extension>
