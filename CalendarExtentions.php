@@ -38,15 +38,14 @@
  */
 class CalendarExtentions extends Backend
 {
-// MyClass.php
     public function filterAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Module $objModule)
     {
         $arrFilteredEvents = array();
+        
 
         // Remove events outside the scope
         		foreach ($arrEvents as $key=>$days)
         		{
-
         			if ($key < date('Ymd', $objModule->filterStartDate) || $key > date('Ymd', $objModule->filterEndDate))
         			{
         				continue;
