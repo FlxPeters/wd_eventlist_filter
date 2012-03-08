@@ -46,7 +46,6 @@ class CalendarExtentions extends Backend
         // Remove events outside the scope
         		foreach ($arrEvents as $key=>$days)
         		{
-                    echo $key;
 
         			if ($key < date('Ymd', $objModule->filterStartDate) || $key > date('Ymd', $objModule->filterEndDate))
         			{
