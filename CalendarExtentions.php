@@ -43,28 +43,62 @@ class CalendarExtentions extends Backend
         $arrFilteredEvents = array();
 
         // Remove events outside the scope
-        		foreach ($arrEvents as $key=>$days)
-        		{
-        			if ((is_numeric($objModule->filterStartDate) && $key < date('Ymd', $objModule->filterStartDate)) ||
-                        (is_numeric($objModule->filterEndDate) && $key > date('Ymd', $objModule->filterEndDate)))
-        			{
-        				continue;
-        			}
+        foreach ($arrEvents as $key => $days)
+        {
+            if ((is_numeric($objModule->filterStartDate) && $key < date('Ymd', $objModule->filterStartDate)) ||
+                (is_numeric($objModule->filterEndDate) && $key > date('Ymd', $objModule->filterEndDate))
+            ) {
+                continue;
+            }
 
-        			foreach ($days as $day=>$events)
-        			{
-        				foreach ($events as $i=>$event)
-        				{
+            foreach ($days as $day => $events)
+            {
+                foreach ($events as $i => $event)
+                {
 
-                            $arrFilteredEvents[$key][$day][$i] = $event;
-        				}
-        			}
-        		}
+                    $arrFilteredEvents[$key][$day][$i] = $event;
+                }
+            }
+        }
 
         return $arrFilteredEvents;
     }
 
+    public function tagAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Module $objModule)
+    {
+        $arrTagedEvents = array();
 
+        $strDay = '';
+        $strYear = '';
+
+        // Set Flags for new Month and Day (Month is set by Contao)
+        foreach ($arrEvents as $key => $days)
+        {
+            foreach ($days as $day => $events)
+            {
+                foreach ($events as $i => $event)
+                {
+
+                    // new Startdate = new Day
+                    if ($strDay != $event['startDate']) {
+                        $event['isNewDay'] = true;
+                        $strDay = $event['startDate'];
+                    }
+                    
+                    if ($strYear != date('Y', $event['startDate'])) {
+                        $event['isNewYear'] = true;
+                        $strYear = date('Y', $event['startDate']);
+                    }
+
+                    $arrTagedEvents[$key][$day][$i] = $event;
+
+                }
+            }
+        }
+
+        return $arrTagedEvents;
+    }
 }
+
 
 ?>

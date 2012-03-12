@@ -51,6 +51,7 @@
  */
 
 $GLOBALS['TL_HOOKS']['getAllEvents'][] = array('CalendarExtentions', 'filterAllEvents');
+$GLOBALS['TL_HOOKS']['getAllEvents'][] = array('CalendarExtentions', 'tagAllEvents');
 
 
  
