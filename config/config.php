@@ -50,9 +50,5 @@
  * Use function array_insert() to modify an existing hooks array.
  */
 
-$GLOBALS['TL_HOOKS']['getAllEvents'][] = array('CalendarExtentions', 'filterAllEvents');
-$GLOBALS['TL_HOOKS']['getAllEvents'][] = array('CalendarExtentions', 'tagAllEvents');
-
-
- 
-?>
+$GLOBALS['TL_HOOKS']['getAllEvents'][] = array('Calendar\CalendarExtentions', 'filterAllEvents');
+$GLOBALS['TL_HOOKS']['getAllEvents'][] = array('Calendar\CalendarExtentions', 'tagAllEvents');

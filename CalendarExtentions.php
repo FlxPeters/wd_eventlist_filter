@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
@@ -28,6 +28,7 @@
  * @filesource
  */
 
+namespace WichtelDesign\Calendar;
 
 /**
  * Class CalendarExtentions
@@ -36,9 +37,16 @@
  * @author     Felix Peters - Wichteldesign
  * @package    Controller
  */
-class CalendarExtentions extends Backend
+class CalendarExtentions extends \Contao\BackendModule
 {
-    public function filterAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Module $objModule)
+
+    protected function compile()
+    {
+
+    }
+
+
+    public function filterAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, \Contao\ModuleEventlist $objModule)
     {
         $arrFilteredEvents = array();
 
@@ -64,7 +72,7 @@ class CalendarExtentions extends Backend
         return $arrFilteredEvents;
     }
 
-    public function tagAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Module $objModule)
+    public function tagAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, \Contao\ModuleEventlist $objModule)
     {
         $arrTagedEvents = array();
 
@@ -99,6 +107,3 @@ class CalendarExtentions extends Backend
         return $arrTagedEvents;
     }
 }
-
-
-?>
